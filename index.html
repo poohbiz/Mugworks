@@ -60,10 +60,12 @@
         />
         <div class="container">
           <div class="hero-content">
-            <h1 class="hero-tag">Feel the season.</h1>
+            <div class="hero-tag">
+              <h1 class="hero-tag-main">Feel the season.</h1>
+              <span class="hero-tag-sub">Sip with festivity.</span>
+            </div>
             <p class="hero-sub">
-              Sip with festivity. Hand-finished mugs, warm glazes, built for
-              daily rituals.
+              Hand-finished mugs, warm glazes, built for daily rituals.
             </p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="#mugs">Shop Mugs</a>
@@ -74,85 +76,256 @@
       </section>
       <section id="mugs">
         <h2 class="section-title">Our Finest Products</h2>
-        <div class="container">
+        <div class="container products-wrap">
           <div class="product-grid">
             <div class="product-card">
-              <img
-                class="product-img"
-                src="images/black-shine.jpeg"
-                alt="Black ceramic mug with hammered, reflective exterior and glossy black interior on a sunlit wooden table."
-                loading="lazy"
-              />
+              <span class="badge badge--bestseller">Best Seller</span>
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    images/black-shine/black-shine-400.avif 400w,
+                    images/black-shine/black-shine-800.avif 800w
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/black-shine/black-shine-400.webp 400w,
+                    images/black-shine/black-shine-800.webp 800w
+                  "
+                />
+                <img
+                  class="product-img"
+                  src="images/black-shine/black-shine-400.jpg"
+                  srcset="
+                    images/black-shine/black-shine-400.jpg 400w,
+                    images/black-shine/black-shine-800.jpg 800w
+                  "
+                  sizes="(min-width:1000px) 33vw, (min-width:640px) 50vw, 100vw"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Black hammered mug with glossy black interior."
+                  width="800"
+                  height="800"
+                />
+              </picture>
               <h3>Black Shine</h3>
               <p>
                 Modern, hammered mug with mirror-bright sheen and deep-black
                 interior.
               </p>
+              <div class="product-meta">
+                <span class="product-price">$27.99</span>
+                <a class="product-cta" href="#mugs">View</a>
+              </div>
             </div>
             <div class="product-card">
-              <img
-                class="product-img"
-                src="images/industrial-white.jpeg"
-                alt="White ceramic mug with a black Dresser Haulpak Division logo printed on the side, sitting on a wooden table in sunlight."
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    images/industrial-white/industrial-white.avif     400w,
+                    images/industrial-white/industrial-white-800.avif 800w
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/industrial-white/industrial-white-400.webp 400w,
+                    images/industrial-white/industrial-white-800.webp 800w
+                  "
+                />
+                <img
+                  class="product-img"
+                  src="images/industrial-white/industrial-white-400.jpg"
+                  srcset="
+                    images/industrial-white/industrial-white-400.jpg 400w,
+                    images/industrial-white/industrial-white-800.jpg 800w
+                  "
+                  sizes="(min-width:1000px) 33vw, (min-width:640px) 50vw, 100vw"
+                  loading="lazy"
+                  decoding="async"
+                  alt="White mug with industrial stamp logo."
+                  width="800"
+                  height="800"
+                />
+              </picture>
               <h3>Industrial White</h3>
               <p>
                 Simplicity with a touch of grit, featuring glossy ceramic and
                 stark black print.
               </p>
+              <div class="product-meta">
+                <span class="product-price">$21.99</span>
+                <a class="product-cta" href="#mugs">View</a>
+              </div>
             </div>
             <div class="product-card">
-              <img
-                class="product-img"
-                src="images/moo-mug.jpeg"
-                alt="White ceramic mug with colorful pasture scene of cows and a cow-shaped handle, sitting on a wooden table in sunlight."
-                loading="lazy"
-              />
+              <span class="ribbon">FARMHOUSE</span>
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    images/moo-mug/moo-mug.avif     400w,
+                    images/moo-mug/moo-mug-800.avif 800w
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/moo-mug/moo-mug-400.webp 400w,
+                    images/moo-mug/moo-mug-800.webp 800w
+                  "
+                />
+                <img
+                  class="product-img"
+                  src="images/moo-mug/moo-mug-400.jpg"
+                  srcset="
+                    images/moo-mug/moo-mug-400.jpg 400w,
+                    images/moo-mug/moo-mug-800.jpg 800w
+                  "
+                  sizes="(min-width:1000px) 33vw, (min-width:640px) 50vw, 100vw"
+                  loading="lazy"
+                  decoding="async"
+                  alt="White ceramic mug with black cow pattern."
+                  width="800"
+                  height="800"
+                />
+              </picture>
               <h3>The Moo Mug</h3>
               <p>
                 Wrap-around farmyard illustration paired with a whimsical
                 cow-shaped handle.
               </p>
+              <div class="product-meta">
+                <span class="product-price">$25.99</span>
+                <a class="product-cta" href="#mugs">View</a>
+              </div>
             </div>
             <div class="product-card">
-              <img
-                class="product-img"
-                src="images/granny-mug.jpeg"
-                alt="Glossy red ceramic mug with a rounded body and handle, sitting on a wooden table in sunlight."
-                loading="lazy"
-              />
+              <span class="badge badge--bestseller">Best Seller</span>
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    images/granny-mug/granny-mug-400.avif 400w,
+                    images/granny-mug/granny-mug-800.avif 800w
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/granny-mug/granny-mug-400.webp 400w,
+                    images/granny-mug/granny-mug-800.webp 800w
+                  "
+                />
+                <img
+                  class="product-img"
+                  src="images/granny-mug/granny-mug-400.jpg"
+                  srcset="
+                    images/granny-mug/granny-mug-400.jpg 400w,
+                    images/granny-mug/granny-mug-800.jpg 800w
+                  "
+                  sizes="(min-width:1000px) 33vw, (min-width:640px) 50vw, 100vw"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Rounded red mug with cozy, classic shape."
+                  width="800"
+                  height="800"
+                />
+              </picture>
               <h3>The Granny Mug</h3>
               <p>
                 Deep red glaze with a rounded, easy-to-hold shape. Simple,
                 sturdy, and full of comfort.
               </p>
+              <div class="product-meta">
+                <span class="product-price">$23.99</span>
+                <a class="product-cta" href="#mugs">View</a>
+              </div>
             </div>
             <div class="product-card">
-              <img
-                class="product-img"
-                src="images/campus-cup.jpeg"
-                alt="Purple ceramic cup with white speckle pattern and bold white lettering, sitting on a wooden table in sunlight."
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    images/campus-cup/campus-cup-400.avif 400w,
+                    images/campus-cup/campus-cup-800.avif 800w
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/campus-cup/campus-cup-400.webp 400w,
+                    images/campus-cup/campus-cup-800.webp 800w
+                  "
+                />
+                <img
+                  class="product-img"
+                  src="images/campus-cup/campus-cup-400.jpg"
+                  srcset="
+                    images/campus-cup/campus-cup-400.jpg 400w,
+                    images/campus-cup/campus-cup-800.jpg 800w
+                  "
+                  sizes="(min-width:1000px) 33vw, (min-width:640px) 50vw, 100vw"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Speckled stoneware mug with campus-style mark."
+                  width="800"
+                  height="800"
+                />
+              </picture>
               <h3>The Campus Cup</h3>
               <p>
                 Pairs rustic enamel-style speckled finish with bold white
-                lettering and a sturdy handle.
+                lettering sturdiness.
               </p>
+              <div class="product-meta">
+                <span class="product-price">$23.99</span>
+                <a class="product-cta" href="#mugs">View</a>
+              </div>
             </div>
             <div class="product-card">
-              <img
-                class="product-img"
-                src="images/white-noise.jpeg"
-                alt="Faded white ceramic mug with subtle surface wear, sitting on a wooden table in sunlight."
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    images/white-noise/white-noise.avif     400w,
+                    images/white-noise/white-noise-800.avif 800w
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/white-noise/white-noise-400.webp 400w,
+                    images/white-noise/white-noise-800.webp 800w
+                  "
+                />
+                <img
+                  class="product-img"
+                  src="images/white-noise/white-noise-400.jpg"
+                  srcset="
+                    images/white-noise/white-noise-400.jpg 400w,
+                    images/white-noise/white-noise-800.jpg 800w
+                  "
+                  sizes="(min-width:1000px) 33vw, (min-width:640px) 50vw, 100vw"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Matte white ceramic mug with minimal texture."
+                  width="800"
+                  height="800"
+                />
+              </picture>
               <h3>White Noise</h3>
               <p>
                 Faded ceramic with washed-out finish that carries the marks of
                 countless mornings.
               </p>
+              <div class="product-meta">
+                <span class="product-price">$21.99</span>
+                <a class="product-cta" href="#mugs">View</a>
+              </div>
             </div>
           </div>
         </div>
@@ -182,8 +355,8 @@
                 </li>
                 <li data-icon="leaf" data-color="caramel">
                   <svg class="icon"><use href="#icon-leaf" /></svg>
-                  <strong>Seasonal character.</strong> Warm glazes that echo
-                  cozy seasons.
+                  <strong>Seasonal character.</strong>Warm glazes that echo cozy
+                  seasons.
                 </li>
                 <li data-icon="shield" data-color="caramel">
                   <svg class="icon"><use href="#icon-shield" /></svg>
@@ -196,10 +369,10 @@
               </ul>
             </div>
           </div>
-          <a class="btn btn-primary center" href="#mugs">Upgrade Your Season</a>
+          <a class="btn btn-primary center" href="#mugs">Upgrade YOUR Season</a>
         </div>
       </section>
-      <section id="testimonials">
+      <section id="testimonials" class="container">
         <h2 class="section-title">Loved by Daily Sippers</h2>
         <ul class="testimonials-grid">
           <li class="t-card">
@@ -234,6 +407,73 @@
           </li>
         </ul>
       </section>
+      <section id="process" class="container">
+        <h2 class="section-title">How We Make Them</h2>
+
+        <details class="process-item">
+          <summary>
+            <h3>Design</h3>
+            <p>Sketches, ergonomics, and balance</p>
+            <span class="chev" aria-hidden="true"></span>
+          </summary>
+          <div class="process-panel">
+            <p>
+              We iterate handle curvature, wall thickness, and center of mass so
+              the mug feels right in the hand—light enough to lift, sturdy
+              enough to last.
+            </p>
+          </div>
+        </details>
+
+        <details class="process-item">
+          <summary>
+            <h3>Glaze</h3>
+            <p>Warm seasonal finishes</p>
+            <span class="chev" aria-hidden="true"></span>
+          </summary>
+          <div class="process-panel">
+            <p>
+              Small-batch color testing for those cozy caramel/latte tones,
+              fired to food-safe standards with consistent schedules for
+              reliable color.
+            </p>
+          </div>
+        </details>
+
+        <details class="process-item">
+          <summary>
+            <h3>Kiln</h3>
+            <p>High-fire for durability</p>
+            <span class="chev" aria-hidden="true"></span>
+          </summary>
+          <div class="process-panel">
+            <p>
+              High-fire cycle for strength—dishwasher/microwave friendly for
+              daily use. Each batch is inspected micro-cracks and glaze
+              integrity.
+            </p>
+          </div>
+        </details>
+      </section>
+      <footer class="site-footer">
+        <div class="container footer-grid">
+          <div class="brand">
+            <strong>Mugworks</strong>
+            <p>Concept shop for cozy mugs.</p>
+          </div>
+          <nav aria-label="footer">
+            <ul class="footer-nav">
+              <li><a href="#mugs">Shop</a></li>
+              <li><a href="@about">About</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+          </nav>
+          <ul class="social">
+            <li><a href="#" aria-label="Instagram">IG</a></li>
+            <li><a href="#" aria-label="Twitter">X</a></li>
+          </ul>
+        </div>
+      </footer>
     </main>
     <script defer src="app.js"></script>
   </body>
