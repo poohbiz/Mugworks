@@ -42,7 +42,6 @@
   --tab-offset: 6px;
 
   /* ---------- FLUID TYPE SCALE ---------- */
-  /* Base 16px; fluid between 360-1280px */
 
   --fs--2: clamp(0.8rem, calc(0.75rem + 0.15vw), 0.9rem); /* captions */
   --fs--1: clamp(0.9rem, calc(0.85rem + 0.15vw), 1rem); /* small text */
@@ -659,7 +658,8 @@ section {
   min-height: clamp(160px, 30vw, 260px);
   padding: var(--space-8);
   color: var(--foam);
-  background: radial-gradient(
+  background: linear-gradient(hsl(24 55% 45% / 0.22), hsl(24 55% 45% / 0.22)),
+    radial-gradient(
       100% 140% at 50% 110%,
       hsl(0 0% 0% / 0.55) 30%,
       transparent 60%
